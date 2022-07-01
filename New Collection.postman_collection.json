@@ -1,0 +1,870 @@
+{
+	"info": {
+		"_postman_id": "12e24eef-e200-4cf5-9b81-c2a91d46fa7d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21314355"
+	},
+	"item": [
+		{
+			"name": "BP_PRUEBA_1",
+			"item": [
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"email\":\"dacom\",\r\n    \"password\":\"98765456\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7115/Catalogo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7115",
+							"path": [
+								"Catalogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/login/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":0,\r\n    \"email\":\"daya@gmail.com\",\r\n    \"password\":\"12345\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aprendiendo_Api",
+			"item": [
+				{
+					"name": "POST_USERS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":0,\r\n    \"cedula\":45678,\r\n    \"nombre\":\"dayni\",\r\n    \"email\":\"ooooooooooooooooooo@gmail.com\",\r\n    \"prioridad\":3\r\n\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_USERS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE_USERS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 0,\r\n    \"cedula\":1719589010,\r\n    \"nombre\":\"Dayana\",\r\n    \"email\":\"daya@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proyecto_Backend",
+			"item": [
+				{
+					"name": "Brand",
+					"item": [
+						{
+							"name": "Get_All_Brand",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Brand",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Brand/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Brand",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post_CreateNewBrand",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"code\": \"1\",\r\n  \"description\": \"Nike\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7238/api/Brand",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Brand/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Brand",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put_ActualizarBrand",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"code\": \"0\",\r\n  \"description\": \"PUMA\"\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:7238/api/Brand",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Brand"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Get_All_Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post_CreateNewProduct",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Zapato Deportivo\",\r\n  \"description\": \"Mujer\",\r\n  \"price\": 85.00,\r\n  \"productTypeId\": \"E\",\r\n  \"brandId\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put_ActualizarBrand",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProductType",
+					"item": [
+						{
+							"name": "Get_All_Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post_CreateNewProduct",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n\r\n    {\r\n        \r\n    \"description\": \"NIKE\"\r\n\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product/002",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product",
+										"002"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put_ActualizarBrand",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7238/api/Product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7238",
+									"path": [
+										"api",
+										"Product"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tienda",
+			"item": [
+				{
+					"name": "GetClientes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Post Clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"id\": 0,\r\n        \"nombreCompleto\": \"Rosaliaaa\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7182/api/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7182",
+							"path": [
+								"api",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put_ActualizarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"id\":2 ,\r\n        \"nombreCompleto\": \"ERIKA SUNTAXI\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7182/api/Cliente",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7182",
+							"path": [
+								"api",
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Practice_Lesson",
+			"item": [
+				{
+					"name": "Autor",
+					"item": [
+						{
+							"name": "Get_All_Autor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Autor",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Autor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Autor/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Autor",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post_CreateNewAutor",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Raiza\",\r\n  \"apellido\": \"Rioverde\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7030/api/Autor",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Autor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Autor/5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Autor",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put_ActualizarAutor",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n  \"nombre\": \"Jonathan\",\r\n  \"apellido\": \"Rioverde\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7030/api/Autor/4",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Autor",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Editorial",
+					"item": [
+						{
+							"name": "Get_All_Editorial",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Editorial",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Editorial"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Editorial/3",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Editorial",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post_CreateNewEditorial",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nombre\": \"Books\",\r\n  \"direccion\": \"Cuenca\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7030/api/Editorial",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Editorial"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7030/api/Editorial/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Editorial",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put_ActualizarEditorial",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n     \"nombre\": \"Libraryra\",\r\n    \"direccion\": \"Guayas\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7030/api/Editorial/2",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7030",
+									"path": [
+										"api",
+										"Editorial",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"id\": 2,\r\n        \"cedula\": 100023846,\r\n        \"email\": \"daya@uuuuuuuuuu.com\",\r\n        \"nombre\": \"Erika\"\r\n    },"
+				},
+				"url": {
+					"raw": "http://localhost:8080/Usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
